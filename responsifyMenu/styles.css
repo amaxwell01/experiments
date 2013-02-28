@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Media Queries
+   * How to use breakpoint
+   * @include breakpoint(large) { width: 60%; }
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 890px) {
+  .menu {
+    background: #333;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 20; } }
+.menu li {
+  float: left;
+  font-family: "CicleGorditaGordita", Arial, San-serif;
+  height: 133px;
+  letter-spacing: 0.1em;
+  list-style: none;
+  text-transform: uppercase; }
+  @media (max-width: 770px) {
+    .menu li {
+      height: auto;
+      width: 100%; } }
+  .menu li.pressLink {
+    margin-left: 71px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.pressLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.pressLink {
+        width: 11%; } }
+    .menu li.pressLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 60px; }
+      @media (max-width: 770px) {
+        .menu li.pressLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.pressLink a:hover {
+        background-position: -38px -49px; }
+  .menu li.careersLink {
+    margin-left: 53px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.careersLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.careersLink {
+        width: 11%; } }
+    .menu li.careersLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 65px; }
+      @media (max-width: 770px) {
+        .menu li.careersLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.careersLink a:hover {
+        background-position: -136px -49px; }
+  .menu li.contactLink {
+    margin-left: 59px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.contactLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.contactLink {
+        width: 11%; } }
+    .menu li.contactLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 65px; }
+      @media (max-width: 770px) {
+        .menu li.contactLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.contactLink a:hover {
+        background-position: -248px -49px; }
+  .menu li.homeLink {
+    color: #BADA55;
+    width: 276px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.homeLink {
+        margin-left: 0;
+        min-width: 276px;
+        text-align: center;
+        width: 22%; } }
+    @media (max-width: 770px) {
+      .menu li.homeLink {
+        display: none; } }
+    .menu li.homeLink:hover {
+      opacity: 0.7; }
+    .menu li.homeLink a {
+      margin: 0;
+      padding: 64px 0; }
+  .menu li.testimonialsLink {
+    margin-left: 46px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.testimonialsLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.testimonialsLink {
+        width: 11%; } }
+    .menu li.testimonialsLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 105px; }
+      @media (max-width: 770px) {
+        .menu li.testimonialsLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.testimonialsLink a:hover {
+        background-position: -350px -49px; }
+  .menu li.historyLink {
+    margin-left: 55px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.historyLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.historyLink {
+        width: 11%; } }
+    .menu li.historyLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 60px; }
+      @media (max-width: 770px) {
+        .menu li.historyLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.historyLink a:hover {
+        background-position: -502px -49px; }
+  .menu li.galleryLink {
+    margin-left: 50px; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li.galleryLink {
+        margin-left: 0;
+        text-align: center;
+        width: 12.5%; } }
+    @media (min-width: 770px) and (max-width: 1100px) {
+      .menu li.galleryLink {
+        width: 11%; } }
+    .menu li.galleryLink a {
+      color: #BADA55;
+      height: 20px;
+      width: 65px; }
+      @media (max-width: 770px) {
+        .menu li.galleryLink a {
+          background: none;
+          height: auto;
+          text-indent: 0;
+          width: 100%; } }
+      .menu li.galleryLink a:hover {
+        background-position: -611px -49px; }
+  @media (max-width: 770px) {
+    .menu li {
+      margin: 10px 0 !important; } }
+  .menu li a {
+    color: #ADAFB2;
+    display: block;
+    margin: 64px 0;
+    text-align: center;
+    text-decoration: none; }
+    @media (min-width: 771px) and (max-width: 1250px) {
+      .menu li a {
+        display: inline-block; } }
+    @media (max-width: 770px) {
+      .menu li a {
+        font-size: 12px;
+        margin: 0; } }
+    .menu li a:hover {
+      color: #DDD; }
