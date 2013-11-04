@@ -4,68 +4,79 @@ var ticTacToe = {
     currentUser: 0,
     players: ['X', 'O'],
     isGameOver: false,
-
-    checkDraw: function( spaces ) {
-        var spacesLength = spaces.length;
-        var i;
-        
-        for ( i = 0; i < spacesLength; i += 1 ) {
-            if ( $(spaces[i]).text().length === 0 ) {
-                return false;
-            }
-        }
-
-        return true;
+    gameBoardSize: 3,
+    moveCount: 0,
+    positionState: {
+        posX: [],
+        posY: []
     },
 
     // Check to see who the winner is
-    checkWinner: function( spaces, player ) {
-        if ( $(spaces[0]).text() === player &&
-             $(spaces[1]).text() === player &&
-             $(spaces[2]).text() === player ) {
-            return true;
+    checkWinner: function( posX, posY, player ) {
+        var i;
+        var j;
+        var k;
+        var l;
+
+        ticTacToe.moveCount += 1;
+
+        var gameBoard = $('.game_board');
+        var gameBoardX = gameBoard.find('div[data-row="' + posX + '"]');
+        var gameBoardY = gameBoard.find('.space');
+
+        // Check Row
+        for ( i = 0; i < ticTacToe.gameBoardSize; i += 1 ) {
+            if ( $(gameBoardX.find('.space')[i]).text() !== player ) {
+                break;
+            } else {
+                if ( i === (ticTacToe.gameBoardSize - 1) ) {
+                    ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                }
+            }
         }
 
-        if ( $(spaces[3]).text() === player &&
-             $(spaces[4]).text() === player &&
-             $(spaces[5]).text() === player ) {
-            return true;
+        // Check Column
+        for ( j = 0; j < ticTacToe.gameBoardSize; j += 1 ) {
+            if ( $(gameBoard.find('div[data-row="' + j + '"]').find('.space')[posY]).text() !== player ) {
+                break;
+            } else {
+                if ( j === ticTacToe.gameBoardSize - 1 ) {
+                    ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                }
+            }
         }
 
-        if ( $(spaces[6]).text() === player &&
-             $(spaces[7]).text() === player &&
-             $(spaces[8]).text() === player ) {
-            return true;
+        // Check Diagonal
+        if( posX === posY ) {
+
+            //we're on a diagonal
+            for ( k = 0; k < ticTacToe.gameBoardSize; k += 1 ) {
+                if ( $(gameBoard.find('div[data-row="' + k + '"]').find('.space')[k]).text() !== player ) {
+                    break;
+                } else {
+                    if( k === ticTacToe.gameBoardSize - 1 ) {
+                        ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                    }
+                }
+            }
+        }
+        
+        // Check Reverse Diagonal
+        for( l = 0; l < ticTacToe.gameBoardSize; l += 1 ){
+            if ( $(gameBoard.find('div[data-row="' + l + '"]').find('.space')[ (ticTacToe.gameBoardSize - 1) - l ]).text() !== player ) {
+                break;
+            } else {
+                if( l === ticTacToe.gameBoardSize - 1 ) {
+                    ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                    return;
+                }
+            }
         }
 
-        if ( $(spaces[0]).text() === player &&
-             $(spaces[3]).text() === player &&
-             $(spaces[6]).text() === player ) {
-            return true;
-        }
-
-        if ( $(spaces[1]).text() === player &&
-             $(spaces[4]).text() === player &&
-             $(spaces[7]).text() === player ) {
-            return true;
-        }
-
-        if ( $(spaces[2]).text() === player &&
-             $(spaces[5]).text() === player &&
-             $(spaces[8]).text() === player ) {
-            return true;
-        }
-
-        if ( $(spaces[0]).text() === player &&
-             $(spaces[4]).text() === player &&
-             $(spaces[8]).text() === player ) {
-            return true;
-        }
-
-        if ( $(spaces[2]).text() === player &&
-             $(spaces[4]).text() === player &&
-             $(spaces[6]).text() === player ) {
-            return true;
+        //check draw
+        if ( ticTacToe.moveCount === ( Math.pow(ticTacToe.gameBoardSize, 2) - 1) ){
+            ticTacToe.showMessage( 'Game is a draw!' );
+            return;
         }
     },
 
@@ -76,6 +87,13 @@ var ticTacToe = {
         ticTacToe.showMessage('');
         ticTacToe.currentUser = 0;
         ticTacToe.isGameOver = false;
+        ticTacToe.isGameOver = false;
+        ticTacToe.moveCount = 0;
+        ticTacToe.positionState = {
+            posX: [],
+            posY: [],
+
+        };
 
         for ( i = 0; i < buttonLength; i += 1 ) {
             $(ticTacToe.buttons[i]).text('');
@@ -89,7 +107,11 @@ var ticTacToe = {
         });
 
         ticTacToe.buttons = $('button.space');
-        ticTacToe.buttons.on('click', ticTacToe.selectGamePiece );
+        ticTacToe.buttons.on('click', function() {
+            var row = parseInt($(this).parent().attr('data-row'), 10);
+            var column = parseInt( $(this).parent().find('.space').index( $(this) ), 10 );
+            ticTacToe.selectGamePiece( row, column, $(this) );
+        });
     },
 
     // Validate if the move is valid
@@ -98,29 +120,19 @@ var ticTacToe = {
     },
 
     // Select the game piece by the current user
-    selectGamePiece: function() {
+    selectGamePiece: function( posX, posY, space ) {
+        ticTacToe.positionState.posX = posX;
+        ticTacToe.positionState.posY = posY;
         ticTacToe.showMessage('');
 
-        if ( ticTacToe.isValidMove($(this)) ) {
+        if ( ticTacToe.isValidMove( space ) ) {
             ticTacToe.showMessage( 'Location already played!' );
             return;
         }
 
-        ticTacToe.setMark( $(this), ticTacToe.players[ ticTacToe.currentUser ] );
-
-        if ( !ticTacToe.isGameOver ) {
-            ticTacToe.isGameOver = !!(ticTacToe.checkWinner( ticTacToe.buttons, ticTacToe.players[ticTacToe.currentUser] ));
-        }
-
-        if ( ticTacToe.isGameOver ) {
-            ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
-            return;
-        }
-
-        if ( ticTacToe.checkDraw( ticTacToe.buttons ) ) {
-            ticTacToe.showMessage( 'Game is a draw!' );
-        }
-
+        ticTacToe.setMark( space, ticTacToe.players[ ticTacToe.currentUser ] );
+        ticTacToe.checkWinner( posX, posY, ticTacToe.players[ticTacToe.currentUser] );
+        
         ticTacToe.currentUser += 1;
         if ( ticTacToe.currentUser > 1 ) {
             ticTacToe.currentUser = 0;
