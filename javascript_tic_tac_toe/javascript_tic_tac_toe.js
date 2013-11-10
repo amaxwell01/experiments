@@ -31,6 +31,7 @@ var ticTacToe = {
             } else {
                 if ( i === (ticTacToe.gameBoardSize - 1) ) {
                     ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                    return true;
                 }
             }
         }
@@ -42,6 +43,7 @@ var ticTacToe = {
             } else {
                 if ( j === ticTacToe.gameBoardSize - 1 ) {
                     ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                    return true;
                 }
             }
         }
@@ -56,6 +58,7 @@ var ticTacToe = {
                 } else {
                     if( k === ticTacToe.gameBoardSize - 1 ) {
                         ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
+                        return true;
                     }
                 }
             }
@@ -68,7 +71,7 @@ var ticTacToe = {
             } else {
                 if( l === ticTacToe.gameBoardSize - 1 ) {
                     ticTacToe.showMessage( 'Game Over: Player ' + ticTacToe.players[ ticTacToe.currentUser ] + ' won!' );
-                    return;
+                    return true;
                 }
             }
         }
@@ -78,6 +81,8 @@ var ticTacToe = {
             ticTacToe.showMessage( 'Game is a draw!' );
             return;
         }
+
+        return false;
     },
 
     clearBoard: function( buttons ) {
