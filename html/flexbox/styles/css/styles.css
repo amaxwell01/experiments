@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.main_content {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  max-width: 1140px;
+  margin: 0 auto; }
+  .main_content > section {
+    padding: 20px; }
+  .main_content .navbar {
+    background: #ffcccc;
+    -moz-flex: 2;
+    -webkit-flex: 2;
+    flex: 2; }
+    .main_content .navbar.order {
+      -moz-order: 1;
+      -webkit-order: 1;
+      order: 1; }
+  .main_content .news {
+    background: #b3ffb3;
+    -moz-flex: 7;
+    -webkit-flex: 7;
+    flex: 7; }
+    .main_content .news.order {
+      -moz-order: 0;
+      -webkit-order: 0;
+      order: 0; }
+  .main_content .widgets {
+    background: #ccccff;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+    .main_content .widgets.order {
+      -moz-order: 2;
+      -webkit-order: 2;
+      order: 2; }
