@@ -1,0 +1,20 @@
+FILES=*
+for file in $FILES
+do
+    echo "Processing $file file..."
+
+    if [ -d "${file}" ] ; then
+        echo "$file is a directory";
+        cd "$file"
+    else
+        if [ -f "${file}" ]; then
+            if [ ! -d "~/Desktop/output" ]; then
+                mkdir "~/Desktop/output"
+            fi
+            expand -4 "$file" > "~/Desktop/output/${file}"
+        else
+            echo "${file} is not valid";
+            exit 1
+        fi
+    fi
+done
