@@ -1,0 +1,12 @@
+{
+    "name": "my-grunt-test",
+    "version": "0.0.1",
+    "description": "My grunt test",
+    "devDependencies": {
+        "grunt": "~0.4.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Andrew Maxwell"
+}
