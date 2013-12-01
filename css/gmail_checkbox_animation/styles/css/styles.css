@@ -10,18 +10,59 @@
   -ms-user-select: none;
   user-select: none; }
 
+li:nth-child(1n+0) label {
+  background-color: #9043CA; }
+
+li:nth-child(2n+0) label {
+  background-color: #99C953; }
+
+li:nth-child(3n+0) label {
+  background-color: #F56D44; }
+
+li:nth-child(4n+0) label {
+  background-color: #35A8C0; }
+
+li {
+  border-bottom: solid 1px #DDD;
+  color: #CCC;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+  overflow: hidden;
+  padding: .5em 0 .5em 1em;
+  position: relative;
+  width: 100%; }
+  li:hover {
+    background-color: rgba(204, 204, 204, 0.1); }
+  li article {
+    display: inline-block;
+    margin-left: 5em;
+    padding: .5em 0 0 1em;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  li h1 {
+    color: #666;
+    font-size: 1.5em;
+    font-weight: 100; }
+  li p {
+    font-size: 1em;
+    font-weight: 100; }
+  li.selected {
+    background: rgba(53, 168, 192, 0.1); }
+
 input[type="checkbox"] + label {
-  background: #F56D44;
+  -webkit-animation: labelCheck .4s;
+  animation: labelCheck .4s;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  height: 2em;
+  float: left;
   font-size: 2em;
+  height: 2em;
   line-height: 2em;
   position: relative;
   text-align: center;
-  animation: mysecond .4s;
-  -webkit-animation: mysecond .4s;
   transition-duration: .4s;
   transition-property: background, transform, -webkit-transform;
   transition-timing-function: ease-in;
@@ -55,78 +96,120 @@ input[type="checkbox"] {
   display: none; }
 
 input[type="checkbox"]:checked + label {
-  -webkit-animation: labelcheck .4s;
-  animation: labelcheck .4s;
-  background: #839098; }
+  -webkit-animation: labelChecked .4s;
+  animation: labelChecked .4s;
+  background-color: #839098; }
   input[type="checkbox"]:checked + label .letter {
-    -webkit-transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
   input[type="checkbox"]:checked + label .check {
     -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
     -webkit-animation: checkmark .55s;
     animation: checkmark .55s; }
 
-@keyframes labelcheck {
+@keyframes labelChecked {
   0% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   50% {
-    -webkit-transform: scale(0.1, 1); }
+    -webkit-transform: scale(0.1, 1);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
-@-webkit-keyframes labelcheck {
+@-webkit-keyframes labelChecked {
   0% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   50% {
-    -webkit-transform: scale(0.1, 1); }
+    -webkit-transform: scale(0.1, 1);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
-@keyframes mysecond {
+@keyframes labelCheck {
   0% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   50% {
-    -webkit-transform: scale(0.1, 1); }
+    -webkit-transform: scale(0.1, 1);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
-@-webkit-keyframes mysecond {
+@-webkit-keyframes labelCheck {
   0% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   50% {
-    -webkit-transform: scale(0.1, 1); }
+    -webkit-transform: scale(0.1, 1);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
 @keyframes checkmark {
   0% {
-    -webkit-transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
 
   50% {
-    -webkit-transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
 
   80% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
 
 @-webkit-keyframes checkmark {
   0% {
-    -webkit-transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
 
   50% {
-    -webkit-transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0); }
 
   80% {
-    -webkit-transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
 
   100% {
-    -webkit-transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); } }
