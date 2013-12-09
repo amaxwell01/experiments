@@ -1,0 +1,155 @@
+@mixin scale( $x, $y ) {
+    -webkit-transform: scale($x, $y);
+    -webkit-transform: scale($x, $y);
+    transform: scale($x, $y);
+}
+
+
+* {
+  box-sizing: border-box;
+  //font-family: 'Fenix', serif;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+textarea,
+input,
+button
+{
+    outline: none;
+}
+
+body {
+    background: #8CBF40;
+}
+
+.search_background {
+    position: relative;
+}
+
+.search {
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    width: 30em;
+
+    &.selected {
+        overflow: inherit;
+    }
+
+    .mic {
+        background: none;
+        border: none;
+        color: #FFF;
+        cursor: pointer;
+        display: block;
+        font-size: 1.4em;
+        padding: .5em .5em .3em;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+
+        &.selected {
+            color: #F00;
+            width: 100%;
+
+            &:hover {
+                background: #FFF;
+            }
+        }
+
+        .mic_select {
+            position: absolute;
+            @include scale( 0, 0 );
+
+            &.selected {
+                @include scale( 1, 1 );
+                background: #FFF;
+                height: 20em;
+                right: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        &:hover .mic_select {
+            @include scale( 1.8, 1.8 );
+            -webkit-animation: micHover .2s;
+            animation: micHover .2s;
+            background: rgba(#CCC, .5);
+            border-radius: 50% 0 0 50%;
+            height: 1.5em;
+            position: absolute;
+            right: 0;
+            top: .15em;
+            width: 1.5em;
+            z-index: 90;
+        }
+
+        i {
+            position: relative;
+            z-index: 100;
+        }
+    }
+
+    .google_search {
+        background: rgba(#FFF, .6);
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 3px 2px rgba(0,0,0, .1);
+        color: #333;
+        cursor: default;
+        font-size: 1.2em;
+        letter-spacing: -0.05em;
+        padding: .5em .2em;
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+           color: #CCC;
+           font-weight: 100;
+           letter-spacing: -0.05em;
+        }
+
+        :-moz-placeholder {
+           color: #CCC;
+           font-weight: 100;
+           letter-spacing: -0.05em;
+        }
+
+        :-ms-input-placeholder {  
+           color: #CCC;
+           font-weight: 100;
+           letter-spacing: -0.05em;
+        }
+    }
+}
+
+@keyframes micHover {
+    0% {
+        opacity: 0;
+        @include scale( 0, 0 );
+    }
+    100% {
+        opacity: 1;
+        @include scale( 1.8, 1.8 );
+    }
+}
+
+@-webkit-keyframes micHover {
+    0% {
+        opacity: 0;
+        @include scale( 0, 0 );
+    }
+    100% {
+        opacity: 1;
+        @include scale( 1.8, 1.8 );
+    }
+}
