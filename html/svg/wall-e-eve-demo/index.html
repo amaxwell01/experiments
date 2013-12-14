@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<title>EVE - HTML5 Demo</title>
+	<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	
+	<!--- Typekit --->
+	<script type="text/javascript" src="http://use.typekit.com/uzr5cmt.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--- HEADER CITYSCAPE CANVAS --->
+	<script type="text/javascript" src="js/cityscape.js"></script>
+    
+</head>
+
+<body>
+
+	<div id="container">
+		<header>
+			<img id="the-future" src="images/the-future-is-now.svg" width="625" height="95" />
+			<h4 class="tk-myriad-pro">a message from</h4>
+			<div id="buy">
+				<div class="buy-large tk-expressway">buy</div>
+				<div id="n">n</div>
+				<div class="buy-large tk-expressway">large</div>
+			</div>
+
+			<!--- THIS IS THE CITYSCAPE THAT IS SEEN IN THE BACKGROUND --->
+			<canvas id="cityscape" width="655" height="150"></canvas>
+		</header>
+		<div id="inside-container">
+
+			<!--- ALL OF THE EVE CHARACTERS --->
+			<ul id="eves">
+				
+				<!--- FIRST ROW OF 8 EVE's --->
+				<li id="first-row">
+					<ul>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+						<li><img src="images/eve-first-row.svg" width="72" height="130" /></li>
+					</ul>
+				</li>
+
+				<!--- SECOND ROW OF 5 EVE's --->
+				<li id="second-row">
+					<ul>
+						<li><img src="images/eve-second-row.svg" width="109" height="198" /></li>
+						<li><img src="images/eve-second-row.svg" width="109" height="198" /></li>
+						<li><img src="images/eve-second-row.svg" width="109" height="198" /></li>
+						<li><img src="images/eve-second-row.svg" width="109" height="198" /></li>
+						<li><img src="images/eve-second-row.svg" width="109" height="198" /></li>
+					</ul>
+				</li>
+
+				<!--- THIRD ROW OF 3 EVE's --->
+				<li id="third-row">
+					<ul>
+						<li><img src="images/eve-third-row.svg" width="160" height="290" /></li>
+						<li><img src="images/eve-third-row.svg" width="160" height="290" /></li>
+						<li><img src="images/eve-third-row.svg" width="160" height="290" /></li>
+					</ul>
+				</li>
+
+				<!--- FORTH ROW OF 2 EVE's --->
+				<li id="forth-row">
+					<ul>
+						<li><img src="images/eve-forth-row.svg" width="240" height="434" /></li>
+						<li><img src="images/eve-forth-row.svg" width="240" height="434" /></li>
+					</ul>
+				</li>
+			</ul>
+
+
+		</div>
+		<footer>
+        			<!--- LAST EVE --->
+			<div id="last-row">
+				<!--<img alt="a green leaf badge" height="100" src="/images/leaf-badge.png" title="Go Green" width="100" />-->
+				<img src="images/large-eve.svg" width="380" height="688" />
+			</div>
+			<p class="tk-myriad-pro">
+				research robotics technology
+				that blasts light years ahead!
+			</p>
+
+			<!--- THIS IS THE TRIANGLE IN THE MIDDLE OF THE WORD EVE --->
+            <div id="eve">
+				<img src="images/eve-logo.svg" width="250" height="50" />
+            </div>
+		</footer>
+	</div>
+
+</body>

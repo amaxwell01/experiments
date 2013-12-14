@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="EVE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="353px" height="489px" viewBox="0 0 353 489" enable-background="new 0 0 353 489" xml:space="preserve">
+<g id="LEFT_ARM">
+	<path fill="#F7EFCB" d="M306.488,215.616c0,0,12.271,110.859-19.205,196.75c-2.141,9.155-9.87,19.207-9.603,0
+		c0,0-15.578-192.662-4.909-191.167C283.441,222.696,306.488,215.616,306.488,215.616z"/>
+	<path fill="#C5D9B6" d="M273.783,222.844l19.38-3.864c0,0-5.479,123.138-18.625,144.501
+		C268.696,298.298,273.783,222.844,273.783,222.844z"/>
+</g>
+<g id="BODY">
+	<path fill="#F7EFCB" d="M264.137,398.969c-21.369,93.555-136.761,134.217-186.463,5.778
+		c-34.217-88.425-26.765-208.973-26.765-208.973h238.594C289.502,195.774,280.364,327.922,264.137,398.969z"/>
+</g>
+<g id="RIGHT_ARM">
+</g>
+<g id="NECK">
+	<path fill="#CCDDBE" d="M288.625,197.488c-4.292,4.797-54.408,9.375-120.208,9.375c-65.799,0-116.057-4.577-118.071-9.375
+		c-2.983-7.104,53.34-13.952,119.139-13.952C235.285,183.536,293.763,191.745,288.625,197.488z"/>
+</g>
+<g id="HEAD">
+	<path fill="#F7EFCB" d="M289.983,115.855c0,62.43-43.026,81.47-110.755,81.47c-67.729,0-134.514-19.041-134.514-81.47
+		c0-62.429,54.906-113.039,122.635-113.039C235.078,2.816,289.983,53.426,289.983,115.855z"/>
+</g>
+<g id="FACE_-_BLACK">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M285.089,127.292c-0.876,33.67-46.282,42.059-88.675,42.059
+		c-42.392,0-84.799-11.176-85.929-44.838c-1.343-39.981,40.385-80.108,82.777-80.108C240.896,44.404,286.663,66.749,285.089,127.292
+		z"/>
+</g>
+<g id="FACE_-_HIGHLIGHT">
+	
+		<ellipse id="BOTTOM_HIGHLIGHT" fill-rule="evenodd" clip-rule="evenodd" fill="#F7EFCB" cx="165.177" cy="70.136" rx="6.734" ry="2.479"/>
+	<path id="TOP_HIGHLIGHT" fill-rule="evenodd" clip-rule="evenodd" fill="#F7EFCB" d="M190.672,60.083
+		c0,2.108-5.175,2.968-11.432,3.817c-8.138,1.104-11.431-1.709-11.431-3.817c0-2.107,6.815-4.534,13.107-5.053
+		C188.677,54.389,190.672,57.976,190.672,60.083z"/>
+</g>
+<g id="LEFT_EYE">
+	
+		<ellipse transform="matrix(0.9668 0.2556 -0.2556 0.9668 34.1852 -40.2999)" fill="#F7EFCB" cx="172.134" cy="111.367" rx="25.961" ry="18.042"/>
+	<g>
+		<defs>
+			
+				<ellipse id="SVGID_1_" transform="matrix(0.9668 0.2556 -0.2556 0.9668 34.1786 -40.2435)" cx="171.911" cy="111.367" rx="25.961" ry="18.042"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="193.808" y1="126.652" x2="157.056" y2="126.652"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="149.141" y1="122.391" x2="203.502" y2="122.391"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="206.82" y1="117.759" x2="144.292" y2="117.759"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="139.188" y1="113.868" x2="206.82" y2="113.868"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="204.521" y1="109.605" x2="137.91" y2="109.605"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="136.891" y1="104.79" x2="200.949" y2="104.79"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="192.783" y1="100.158" x2="139.188" y2="100.158"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="147.354" y1="96.081" x2="184.87" y2="96.081"/>
+	</g>
+</g>
+<g id="RIGHT_EYE">
+	
+		<ellipse transform="matrix(-0.9668 0.2556 -0.2556 -0.9668 505.6241 154.5619)" fill="#F7EFCB" cx="242.768" cy="110.138" rx="23.578" ry="16.385"/>
+	<g id="Layer_12">
+		<g>
+			<defs>
+				
+					<ellipse id="SVGID_3_" transform="matrix(-0.9668 0.2556 -0.2556 -0.9668 505.6241 154.5619)" cx="242.768" cy="110.138" rx="23.578" ry="16.385"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" d="M206.445,117.299"/>
+			<path clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" d="M206.445,113.408"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="219.637" y1="125.491" x2="256.389" y2="125.491"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="264.303" y1="121.229" x2="209.942" y2="121.229"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="206.625" y1="116.598" x2="269.152" y2="116.598"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="274.256" y1="112.707" x2="206.625" y2="112.707"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="208.923" y1="108.444" x2="275.534" y2="108.444"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="276.554" y1="103.628" x2="212.494" y2="103.628"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="220.661" y1="98.996" x2="274.256" y2="98.996"/>
+			
+				<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="266.09" y1="94.92" x2="228.574" y2="94.92"/>
+		</g>
+	</g>
+</g>
+<g id="STOMACH_LINES">
+	<path fill="none" stroke="#C5D9B6" d="M276.632,326.211c-6.627,46.493-20.196,84.677-70.265,89.424
+		c-35.356,3.351-57.797-39.4-60.065-88.771c-3.155-68.711,19.881-84.489,60.508-88.431
+		C298.458,229.542,284.395,271.754,276.632,326.211z"/>
+	<path fill="none" stroke="#C5D9B6" d="M233.203,237.832c0,0,11.023,103.775-19.14,176.428"/>
+	<path fill="none" stroke="#C5D9B6" d="M235.168,282.822c0,0,28.612,12.236,47.278-10.905"/>
+</g>
+</svg>

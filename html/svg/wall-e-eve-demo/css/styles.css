@@ -1,0 +1,177 @@
+/*-------
+Created By: Andrew Maxwell
+Date: 6/7/10
+--------*/
+* {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+embed {
+	display: none;
+}
+
+/*--- HEADING ---*/
+#the-future {
+	margin: 10px 0 5px 0;
+}
+#buy {
+	background: #f3ebc7;
+
+	/*--- BORDER RADIUS. ROUNDED CORNERS ---*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: block;
+	float: left;
+	height: 22px;
+	margin: -5px 0 0 0;
+	width: 160px;
+}
+.buy-large  {
+	color: #016f70;
+	display: inline-block;
+	float: left;
+	font-weight: 800;
+	font-size: 22px;
+	font-style: italic;
+	margin: 0 0 0 5px;
+}
+#n {
+	background: #016f70;	
+	
+	/*--- BORDER RADIUS. ROUNDED CORNERS ---*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	color: #f3ebc7;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 14px;
+	margin: 5px 0 0 5px;
+	padding: 0px 1px 1px 2px;
+	width: 12px;
+}
+p {
+	color: #f3ebc7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+ul {
+	float: left;
+	list-style-type: none;
+}
+ul li {
+	float: left;
+	list-style-type: none;
+}
+/*--- CONTAINER ---*/
+#container {
+	border: solid 12px #f8f0c2;
+	height: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 665px;
+}
+
+
+/*--- HEADER ---*/
+header {
+	background: #016f70;
+	float: left;
+	height: 215px;
+	position: relative;
+	text-align: center;
+	width: 665px;
+}
+header h4 {
+	margin: 0 8px 0 160px;
+	color: #f3ebc7;
+	float: left;
+	font-size: 14px;
+}
+#cityscape {
+	bottom: 0;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	width: 665px;
+}
+/*--- INSIDE CONTAINER ---*/
+#inside-container {
+	background: #000;
+	height: 880px;
+	width: 665px;
+}
+ul#eves {
+
+}
+li#first-row {
+	display: block;
+	margin: 10px 0 0 0;
+}
+li#second-row {
+	display: block;
+	margin: -100px 0 0 0;
+}
+li#third-row {
+	display: block;
+	margin: -150px 0 0 0;
+}
+li#forth-row {
+	display: block;
+	margin: -230px 0 0 0;
+}
+
+
+/*--- FOOTER ---*/
+footer {
+	background: #016e6b;
+	border-top: solid 8px #f8f0c2;
+	bottom: 0;
+	height: 120px;
+	left: 0;
+	position: absolute;
+	width: 665px;
+}
+#last-row {
+	bottom: -170px;
+	float: left;
+	height: 688px;
+	left: -35px;
+	position: absolute;
+	width: 380px;
+}
+footer p {
+	color: #f0edc2;
+	display: block;
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 17px;
+	margin: 13px 30px 0 0;
+	text-align: left;
+	text-decoration: uppercase;
+	width: 255px;
+}
+#eve {
+	clear: both;
+	float: right;
+	height: 50px;
+	margin: 10px 35px 0 0;
+	position: relative;
+	width: 250px;
+}
+#triangle {
+	left: 92px;
+	position: absolute;
+	top: 32px;
+}

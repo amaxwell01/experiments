@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="109px" height="198px" viewBox="0 0 109 198" enable-background="new 0 0 109 198" xml:space="preserve">
+<path fill="#65AEA7" d="M108.027,87.201c0,0,5.064,45.428-7.926,80.625c-0.883,3.752-4.072,7.871-3.963,0
+	c0,0-6.428-78.95-2.025-78.337C98.518,90.103,108.027,87.201,108.027,87.201z"/>
+<path fill="#016159" d="M94.531,90.164l7.998-1.583c0,0-2.262,50.459-7.686,59.213C92.432,121.083,94.531,90.164,94.531,90.164z"/>
+<path fill="#65AEA7" d="M90.551,162.336c-8.818,38.338-56.439,55-76.95,2.367C-0.52,128.469,2.556,79.071,2.556,79.071h98.462
+	C101.018,79.071,97.248,133.223,90.551,162.336z"/>
+<path fill="#016159" d="M100.656,79.772c-1.771,1.966-22.453,3.842-49.607,3.842S3.155,81.739,2.324,79.772
+	c-1.231-2.911,22.013-5.717,49.167-5.717C78.645,74.055,102.777,77.419,100.656,79.772z"/>
+<path fill="#65AEA7" d="M101.217,46.321c0,25.583-17.756,33.385-45.706,33.385S0,71.904,0,46.321C0,20.739,22.658,0,50.608,0
+	S101.217,20.739,101.217,46.321z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M99.197,51.008c-0.361,13.797-19.1,17.235-36.594,17.235
+	c-17.495,0-34.996-4.58-35.462-18.374c-0.554-16.383,16.666-32.827,34.16-32.827C80.959,17.042,99.846,26.198,99.197,51.008z"/>
+<ellipse id="BOTTOM_HIGHLIGHT" fill-rule="evenodd" clip-rule="evenodd" fill="#65AEA7" cx="49.712" cy="27.586" rx="2.779" ry="1.016"/>
+<path id="TOP_HIGHLIGHT" fill-rule="evenodd" clip-rule="evenodd" fill="#65AEA7" d="M60.232,23.467
+	c0,0.864-2.135,1.216-4.717,1.564c-3.358,0.452-4.718-0.701-4.718-1.564c0-0.863,2.813-1.857,5.409-2.071
+	C59.41,21.133,60.232,22.604,60.232,23.467z"/>
+<path fill="#65AEA7" d="M62.941,47.201c-1.053,3.948-6.541,5.93-12.262,4.429c-5.721-1.502-9.505-5.919-8.455-9.867
+	c1.051-3.948,6.541-5.93,12.261-4.429C60.207,38.836,63.992,43.254,62.941,47.201z"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M62.848,47.201c-1.051,3.948-6.54,5.93-12.26,4.429c-5.721-1.502-9.505-5.919-8.454-9.867
+			c1.051-3.948,6.54-5.93,12.261-4.429C60.114,38.836,63.9,43.254,62.848,47.201z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="61.527" y1="50.746" x2="46.36" y2="50.746"/>
+	<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="43.094" y1="49" x2="65.527" y2="49"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="66.896" y1="47.102" x2="41.093" y2="47.102"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="38.987" y1="45.507" x2="66.896" y2="45.507"/>
+	<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="65.949" y1="43.76" x2="38.459" y2="43.76"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="38.039" y1="41.787" x2="64.475" y2="41.787"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="61.104" y1="39.889" x2="38.987" y2="39.889"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#709B8B" stroke-width="2" x1="42.357" y1="38.218" x2="57.839" y2="38.218"/>
+</g>
+<path fill="#65AEA7" d="M72.326,46.448c0.953,3.585,5.939,5.386,11.133,4.022c5.197-1.364,8.635-5.376,7.68-8.961
+	s-5.939-5.386-11.137-4.022C74.809,38.851,71.371,42.863,72.326,46.448z"/>
+<g>
+	<defs>
+		<path id="SVGID_3_" d="M72.326,46.448c0.953,3.585,5.939,5.386,11.133,4.022c5.197-1.364,8.635-5.376,7.68-8.961
+			s-5.939-5.386-11.137-4.022C74.809,38.851,71.371,42.863,72.326,46.448z"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" d="M66.742,46.913"/>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" d="M66.742,45.318"/>
+	<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="72.186" y1="50.27" x2="87.354" y2="50.27"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="90.619" y1="48.523" x2="68.186" y2="48.523"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="66.816" y1="46.625" x2="92.621" y2="46.625"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="94.727" y1="45.031" x2="66.816" y2="45.031"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="67.766" y1="43.285" x2="95.254" y2="43.285"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="95.674" y1="41.311" x2="69.238" y2="41.311"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="72.609" y1="39.413" x2="94.727" y2="39.413"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#709B8B" stroke-width="2" x1="91.357" y1="37.742" x2="75.875" y2="37.742"/>
+</g>
+<path fill="none" stroke="#016159" d="M95.707,132.521c-2.734,19.053-8.334,34.699-28.996,36.645
+	c-14.591,1.373-23.853-16.146-24.788-36.377c-1.302-28.156,8.204-34.623,24.97-36.238C104.715,92.908,98.91,110.206,95.707,132.521z
+	"/>
+<path fill="none" stroke="#016159" d="M77.785,96.305c0,0,4.549,42.525-7.898,72.297"/>
+<path fill="none" stroke="#016159" d="M78.596,114.742c0,0,11.809,5.014,19.51-4.47"/>
+</svg>
