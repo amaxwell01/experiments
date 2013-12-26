@@ -1,0 +1,1 @@
+{"version":3,"file":"testcode.min.js","sources":["testcode.js"],"names":["testCode","method1","console","log","method2","data"],"mappings":"AAAA,GAAIA,WACAC,QAAS,WACLC,QAAQC,IAAI,IAGhBC,QAAS,SAAUC,GACfH,QAAQC,IAAKE,IAIrBL,UAASC,UACTD,SAASI,QAAS"}
