@@ -1,0 +1,15 @@
+
+[4mGruntfile.js[24m
+  [90mline 0[39m  [90mcol 0[39m   [34mBad option: 'freeze'.[39m
+
+[4mlibs/hello.js[24m
+  [90mline 0[39m  [90mcol 0[39m   [34mBad option: 'freeze'.[39m
+  [90mline 2[39m  [90mcol 4[39m   [34mExpected 'console' to have an indentation at 5 instead at 4.[39m
+  [90mline 2[39m  [90mcol 32[39m  [34mTrailing whitespace.[39m
+
+[4mtest/onetest.js[24m
+  [90mline 0[39m  [90mcol 0[39m   [34mBad option: 'freeze'.[39m
+  [90mline 2[39m  [90mcol 4[39m   [34mExpected 'console' to have an indentation at 5 instead at 4.[39m
+
+[1m[31m✖ 6 problems[39m[22m
+
