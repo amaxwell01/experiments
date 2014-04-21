@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEST</title>
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+<ul>
+  <li><a href="#one" data-link="iframe">One</a></li>
+  <li><a href="#two" data-link="iframe">two</a></li>
+  <li><a href="#three" data-link="iframe">three</a></li>
+</ul>
+<iframe id="jobviteframe" src="http://experiments.cc/html/iframe_anchor_tags/test.html" width="100%" height="2000px" scrolling="no" frameborder="0" allowtransparency="true">Sorry, iframes are not supported.</iframe>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(function() {
+    var jvIframe = $('#jobviteframe');
+    var jvIframeURL = jvIframe.attr('src');
+    var target;
+    var url;
+
+    $('a[data-link="iframe"').click(function(event) {
+        target = event.target;
+        url = $(target).attr('href');
+
+        if ( jvIframe.length ) {
+            jvIframe.attr('src', jvIframeURL + url);   
+            return false;
+        }
+    });
+});
+</script>
+</body>
+</html>
