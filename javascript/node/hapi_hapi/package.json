@@ -1,0 +1,13 @@
+{
+  "name": "hapi_hapi",
+  "version": "0.0.1",
+  "description": "hapi.js experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Maxwell",
+  "dependencies": {
+    "hapi": "~6.2.0"
+  }
+}
