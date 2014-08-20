@@ -3,12 +3,24 @@
 <head>
     <title>img srcset experiment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@media (max-width: 770px)
+.inner_container {
+margin: 10px 0;
+padding: 15px 5px 10px;
+width: 100%;
+}
+html, body { overflow: hidden }
+img, output { display: block }
+img { width: 100vw }
+    </style>
 </head>
 <body>
-<img src="image-src.png"
-     srcset="image-1x.png 1x, image-2x.png 6000w 2x, image-640.jpg 1024w 2x"
-     sizes="(min-width:500px) 33.3vw,
+<div class="inner_container">
+    <img src="image.png" srcset="image-640.png 640w, image-2x.png 300w, image-1x.png 300w"
+    sizes="(min-width:500px) 33.3vw,
              (min-width:1000px) 50vw, 
              100vw">
+</div>
 </body>
 </html>
