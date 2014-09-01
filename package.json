@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/amaxwell01/experiments/issues"
   },
-  "homepage": "https://github.com/amaxwell01/experiments"
+  "homepage": "https://github.com/amaxwell01/experiments",
+  "dependencies": {
+    "express": "4.x"
+  }
 }
