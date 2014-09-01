@@ -1,0 +1,25 @@
+{
+  "name": "experiments",
+  "version": "1.0.0",
+  "description": "Andrew Maxwell's lab experiments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amaxwell01/experiments.git"
+  },
+  "keywords": [
+    "labs",
+    "javascript",
+    "node",
+    "html",
+    "css"
+  ],
+  "author": "Andrew Maxwell",
+  "bugs": {
+    "url": "https://github.com/amaxwell01/experiments/issues"
+  },
+  "homepage": "https://github.com/amaxwell01/experiments"
+}
