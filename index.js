@@ -57,6 +57,8 @@ app.get('/*', function(request, response){
     }
 });
 
-app.listen(8000);
+app.set('domain', 'labs.andrewcmaxwell.com');
+app.set('port', process.env.PORT || 3000);
+app.listen(3000);
 
-console.log('Server running at http://127.0.0.1:8000/');
+console.log('Server running at http://127.0.0.1:3000/');
