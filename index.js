@@ -34,7 +34,8 @@ app.get('/*', function(request, response){
             
             directoryData += '<html>';
             directoryData += '<head>';
-            directoryData += '<style>ul {list-style-position: inside; padding-left: 0;} li {padding: 5px; color: red; border: solid 1px #CCC; list-style-type: none;} li a {color: #333; text-decoration: none;}</style>';
+            directoryData += '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+            directoryData += '<style>ul {list-style-position: inside; padding-left: 0;} li {padding: 5px; color: red; border: solid 1px #CCC; font-size: 1.1em; list-style-type: none; border-bottom: none;} li:last-child { border-bottom: solid 1px #CCC;} li a {color: #333; text-decoration: none;} li.folder {background-color: #fcfcfc;} li:hover a { color: #6ea748; }</style>';
             directoryData += '</head>';
             directoryData += '<body>';
             directoryData += '<ul>';
@@ -42,9 +43,9 @@ app.get('/*', function(request, response){
 
             for (file in directoryFiles) {
                 if (fs.lstatSync(__dirname + path + directoryFiles[file]).isDirectory()) {
-                    folders += '<li><a href="' + path + directoryFiles[file] + '/" target="_self">' + directoryFiles[file] + '</a></li>';
+                    folders += '<li class="folder"><a href="' + path + directoryFiles[file] + '/" target="_self">' + directoryFiles[file] + '</a></li>';
                 } else {
-                    files += '<li><a href="' + path + directoryFiles[file] + '" target="_self">' + directoryFiles[file] + '</a></li>';
+                    files += '<li class="file"><a href="' + path + directoryFiles[file] + '" target="_self">' + directoryFiles[file] + '</a></li>';
                 }
             }
 
