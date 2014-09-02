@@ -42,10 +42,14 @@ app.get('/*', function(request, response){
             directoryData += '<li><a href="../" target="_self"/>..</a></li>';
 
             for (file in directoryFiles) {
-                if (fs.lstatSync(__dirname + path + directoryFiles[file]).isDirectory()) {
-                    folders += '<li class="folder"><a href="' + path + directoryFiles[file] + '/" target="_self">' + directoryFiles[file] + '</a></li>';
-                } else {
-                    files += '<li class="file"><a href="' + path + directoryFiles[file] + '" target="_self">' + directoryFiles[file] + '</a></li>';
+
+                // Don't show any .git folders
+                if (directoryFiles[file] !== '.git') {
+                    if (fs.lstatSync(__dirname + path + directoryFiles[file]).isDirectory()) {
+                        folders += '<li class="folder"><a href="' + path + directoryFiles[file] + '/" target="_self">' + directoryFiles[file] + '</a></li>';
+                    } else {
+                        files += '<li class="file"><a href="' + path + directoryFiles[file] + '" target="_self">' + directoryFiles[file] + '</a></li>';
+                    }
                 }
             }
 
