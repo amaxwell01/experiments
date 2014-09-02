@@ -10,10 +10,11 @@ app.get('/*', function(request, response){
     var directoryData = '';
     var file;
 
-    if (request.url === '/favicon.ico') {
+    if (request.url === '/favicon.ico' ||
+        request.url === '/robots.txt') {
         response.writeHeader(200, {'Content-Type': 'image/x-icon'} );
         response.end();
-        console.log('favicon requested');
+        console.log(request.url + ' requested');
         return;
     }
     
@@ -57,8 +58,6 @@ app.get('/*', function(request, response){
     }
 });
 
-app.set('domain', 'labs.andrewcmaxwell.com');
-app.set('port', process.env.PORT || 3000);
 app.listen(3000);
 
 console.log('Server running at http://127.0.0.1:3000/');
