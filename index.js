@@ -7,6 +7,8 @@ app.get('/*', function(request, response){
     var files = '';
     var folders = '';
     var path = (request.url === 'favicon.ico') ? '/' : request.url;
+    var requestText = ' requested and not found';
+    var resultData = (__dirname + path) + requestText;
     var directoryData = '';
     var file;
 
@@ -28,6 +30,12 @@ app.get('/*', function(request, response){
                 response.write(data);
                 response.end();
             });
+        } else if(path.indexOf('.git') >= 0) {
+            // Handle a file-not-found error
+            response.writeHeader(404, {'Content-Type': 'text/plain'});
+            response.write(request.url + requestText);
+            response.end();
+            console.log(resultData);
         } else {
             directoryFiles = fs.readdirSync(__dirname + path);
             response.writeHeader(200, {'Content-Type': 'text/html'});
@@ -63,9 +71,6 @@ app.get('/*', function(request, response){
             response.end();
         }
     } catch (error) {
-        var requestText = ' requested and not found';
-        var data = (__dirname + path) + requestText;
-
         // If the type is not what you want, then just throw the error again.
         if (error.code !== 'ENOENT') {
             throw error;
@@ -75,7 +80,7 @@ app.get('/*', function(request, response){
         response.writeHeader(404, {'Content-Type': 'text/plain'});
         response.write(request.url + requestText);
         response.end();
-        console.log(data);
+        console.log(resultData);
     }
 });
 
