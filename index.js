@@ -20,7 +20,6 @@ app.get('/*', function(request, response){
 
     try {
         if (fs.lstatSync(__dirname + path).isFile()) {
-            response.writeHeader(200, {'Content-Type': 'text/plain'});
             fs.readFile(__dirname + path, 'utf8', function (error, data) {
                 if (error) {
                     throw error;
