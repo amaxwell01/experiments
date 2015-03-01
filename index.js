@@ -1,5 +1,8 @@
 var fs = require('fs');
 var express = require('express');
+var bunyan = require('bunyan');
+var logger = bunyan.createLogger({name: 'labs.acm'});
+
 var app = express();
 
 app.get('/*', function(request, response){
@@ -14,7 +17,8 @@ app.get('/*', function(request, response){
         request.url === '/robots.txt') {
         response.writeHeader(200, {'Content-Type': 'image/x-icon'} );
         response.end();
-        console.log(request.url + ' requested');
+        // Ignore the favicon and robots.txt files except for debug mode
+        logger.debug(request.url + ' requested');
         return;
     }
 
@@ -22,8 +26,14 @@ app.get('/*', function(request, response){
         if (fs.lstatSync(__dirname + path).isFile()) {
             fs.readFile(__dirname + path, 'utf8', function (error, data) {
                 if (error) {
-                    throw error;
+                    logger.error(error);
                 }
+                logger.info({
+                    request: {
+                        method: request.method
+                    },
+                    path: request.url
+                });
                 response.write(data);
                 response.end();
             });
@@ -58,6 +68,12 @@ app.get('/*', function(request, response){
             directoryData += '</ul>';
             directoryData += '</body>';
             directoryData += '</html>';
+            logger.info({
+                request: {
+                    method: request.method
+                },
+                path: request.url
+            });
             response.write(directoryData);
             response.end();
         }
@@ -67,17 +83,22 @@ app.get('/*', function(request, response){
 
         // If the type is not what you want, then just throw the error again.
         if (error.code !== 'ENOENT') {
-            throw error;
+            logger.info({
+                request: {
+                    method: request.method
+                },
+                path: request.url
+            });
+            logger.error(error);
         }
 
         // Handle a file-not-found error
         response.writeHeader(404, {'Content-Type': 'text/plain'});
         response.write(request.url + requestText);
         response.end();
-        console.log(data);
     }
 });
 
 app.listen(3000);
 
-console.log('Server running at http://127.0.0.1:3000/');
+logger.info('Server running at http://127.0.0.1:3000/');

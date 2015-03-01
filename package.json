@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/amaxwell01/experiments",
   "dependencies": {
+    "bunyan": "^1.3.4",
     "express": "4.x"
   }
 }
