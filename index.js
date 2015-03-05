@@ -1,7 +1,18 @@
 var fs = require('fs');
 var express = require('express');
 var bunyan = require('bunyan');
-var logger = bunyan.createLogger({name: 'labs.acm'});
+var logger = bunyan.createLogger({
+    name: 'labs.acm',
+    serializers: {
+        request: bunyan.stdSerializers.req
+    },
+    streams: [
+        {
+            stream: process.stdout,
+            level: 'debug'
+        }
+    ]
+});
 
 var app = express();
 
@@ -18,7 +29,7 @@ app.get('/*', function(request, response){
         response.writeHeader(200, {'Content-Type': 'image/x-icon'} );
         response.end();
         // Ignore the favicon and robots.txt files except for debug mode
-        logger.debug(request.url + ' requested');
+        logger.trace(request, request.url + ' requested');
         return;
     }
 
@@ -28,12 +39,7 @@ app.get('/*', function(request, response){
                 if (error) {
                     logger.error(error);
                 }
-                logger.info({
-                    request: {
-                        method: request.method
-                    },
-                    path: request.url
-                });
+                logger.info(request);
                 response.write(data);
                 response.end();
             });
@@ -68,12 +74,7 @@ app.get('/*', function(request, response){
             directoryData += '</ul>';
             directoryData += '</body>';
             directoryData += '</html>';
-            logger.info({
-                request: {
-                    method: request.method
-                },
-                path: request.url
-            });
+            logger.info(request);
             response.write(directoryData);
             response.end();
         }
@@ -83,12 +84,7 @@ app.get('/*', function(request, response){
 
         // If the type is not what you want, then just throw the error again.
         if (error.code !== 'ENOENT') {
-            logger.info({
-                request: {
-                    method: request.method
-                },
-                path: request.url
-            });
+            logger.info(request);
             logger.error(error);
         }
 
