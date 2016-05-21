@@ -1,0 +1,14 @@
+{
+  "name": "web_sockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web_sockets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faye-websocket": "^0.11.0"
+  }
+}
